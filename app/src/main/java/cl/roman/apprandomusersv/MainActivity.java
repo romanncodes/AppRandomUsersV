@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 String last = name.getString("last");
 
                 JSONObject picture = user1.getJSONObject("picture");
-                String thumbnail = picture.getString("thumbnail");
+                String thumbnail = picture.getString("large");
 
                 User user = new User(first,last,email,phone,thumbnail);
                 list.add(user);
